@@ -4,9 +4,9 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-email
-accounts-password
-http
+email@1.2.3
+accounts-password@1.4.0
+http@1.2.12
 mondora:asteroid
 meteorhacks:kadira
 aldeed:collection2
@@ -14,11 +14,17 @@ alanning:roles
 matb33:collection-hooks
 iron:router
 mondora:connect-with
-accounts-google
-accounts-twitter
-accounts-ui
+accounts-google@1.2.0
+accounts-twitter@1.3.0
+accounts-ui@1.1.9
 mrt:moment
 yogiben:admin
 twbs:bootstrap
 fortawesome:fontawesome
 dburles:collection-helpers
+standard-minifier-css
+standard-minifier-js
+shell-server
+google-config-ui
+twitter-config-ui
+dynamic-import
