@@ -17,3 +17,11 @@ git clone https://github.com/mondora/mondora-website-back.git
 cd mondora-website-back
 meteor
 ```
+> Due to a STRAVA API call at startup, to spawn the app without blocking exceptions you must set the following environment vars:
+>
+> **STRAVA_API_URL** = https://www.strava.com/api/v3/clubs/148440/activities
+> 
+> **STRAVA_REFRESH_INTERVAL** = 3600000
+>
+> Although the server is up, it will log a warning into console (401 - api token error) whenever the refresh interval expires.
+> The **STRAVA_API_TOKEN** env var is required if you want to change/improve the STRAVA service implementation.
