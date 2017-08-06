@@ -12,8 +12,21 @@ the frontend can be found at
 If you don't have `meteor` installed, you can install it following instructions
 at [meteor.com/install](https://www.meteor.com/install).
 
+### Strava setup
+
+Create an application at [strava.com/settings/api](https://www.strava.com/settings/api) and make note of your `access_token`.
+In order to start the application you need to set the following environment variables:
+
+* `STRAVA_API_URL`=`https://www.strava.com/api/v3/athlete/activities`
+* `STRAVA_API_TOKEN`=`your_access_token`
+* `STRAVA_REFRESH_INTERVAL`=`60000`
+
+For more information about the Strava API please refer to the [Strava API Reference](http://strava.github.io/api/)
+
+Example usage:
+
 ```sh
 git clone https://github.com/mondora/mondora-website-back.git
 cd mondora-website-back
-meteor
+STRAVA_API_URL='https://www.strava.com/api/v3/athlete/activities' STRAVA_API_TOKEN='your_access_token' STRAVA_REFRESH_INTERVAL='60000' meteor
 ```
